@@ -1,0 +1,41 @@
+<div>
+    <div *ngIf=!submited>
+        <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+            <input type="text" placeholder="Username" name="username" ngModel>
+            <input type="password" placeholder="Password" name="password" ngModel>
+            <button>Submit</button>
+        </form>
+    </div>
+    <div *ngIf=submited>
+            <h2>Welcome to the movie rating, {{ username }}!!!</h2>
+            <h3>{{ welcome }}</h3>
+    </div>
+    <div *ngIf=submited>
+          <a (click)="submited=false">Go back to login page</a>  
+    </div>
+
+    <div class="card">
+                    <div class="card-body">
+                        <table>
+                            <tbody>
+                                <tr *ngFor="let movie of movies">
+                                    <td>{{movie.name}}</td>
+                                    <td>{{movie.description}}</td>
+                                    <td>{{movie.rating}}</td>
+                                    <td>{{movie.category}}</td>
+                                    <td>{{movie.actor}}</td>
+                                    <td><img [src]="movie.img" [style.whidth.px]="imageWidth"
+                                    [style.margin.px]="imageMargin"></td>
+                                    <td><img class= "img-thumbnail" [src]="movie.award"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+    </div>
+            
+    <div class="footer">
+                Copyright © We rock Inc. startup All rights reserved.
+    </div>
+
+    
+</div>
