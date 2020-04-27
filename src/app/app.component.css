@@ -1,6 +1,4 @@
-h1 { color: goldenrod; }
+h1 { 
+background:linear-gradient(45deg, white, khaki, goldenrod); 
 
-.cie {
-    font-style: italic;
-    color: green;
 }

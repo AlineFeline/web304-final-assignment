@@ -2,3 +2,37 @@ h2 {
     color: grey;
 }
 
+.name {
+    background: linear-gradient(45deg, white, khaki, goldenrod);
+    border: solid 5px gainsboro;
+    width: 300px;
+}
+
+.desc {
+    width:500px;
+    border: solid 5px gainsboro;
+}
+
+.rate {
+    color: khaki;
+    background: linear-gradient(50deg, white,grey);
+    border: solid 5px gainsboro;
+}
+.cat {
+    border: solid 5px gainsboro;
+}
+.act {
+    border: solid 5px gainsboro;
+}
+.poster {
+    background: linear-gradient(50deg,grey, white);
+    border: solid 5px gainsboro;
+}
+.icon {
+    background: linear-gradient(90deg, white, khaki);
+    border: solid 5px gainsboro;
+}
+
+
+
+
